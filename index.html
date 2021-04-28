@@ -10,34 +10,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css">
+    <script src="jquery.js"></script>
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
 </head>
 
 <body style="font-family: 'Open Sans', sans-serif" class="dark-gray">
     <div class="pa3 center measure-wide lh-copy tj">
-        <header class="bb b--light-gray tc">
-            <h1 class="f1 lh-solid"><a title="Stop hovering me" class="link dark-gray hover-dark-pink">marcin domar.ski</a></h1>
-            <p class="f3 lh-solid">.net dev / gamer / keyboard geek</p>
-            <p class="f4 lh-solid">email me at marcin@domar.ski</p>
-        </header>
 
-        <a class="dark-gray link" href="a/designing_a_brutalist_website.html">
-            <article class="bb b--light-gray pv3">
+        <div id="header"></div>
+
+        <article class="bb b--light-gray pv3">
+            <a class="dark-gray link" href="a/test.html">
+                <div class="dim">
+                    <h2 class="f4 lh-solid">Test</h2>
+                    <p class="silver">28 April 2020</p>
+                </div>
+            </a>
+        </article>
+
+        <article class="bb b--light-gray pv3">
+            <a class="dark-gray link" href="a/designing_a_brutalist_website.html">
                 <div class="dim">
                     <h2 class="f4 lh-solid">Designing a brutalist website</h2>
                     <p class="silver">27 April 2020</p>
                 </div>
-            </article>
-        </a>
+            </a>
+        </article>
 
     </div>
 
-    <footer class="pv4 ph3 ph5-m ph6-l">
-        <small class="f6 db tc">© 2021 <b class="">Marcin Domarski</b>, All Rights Reserved</small>
-        <div class="tc mt3">
-            <a title="GitHub" class="f7 dib ph2 dark-pink link dim" href="https://github.com/drmaruoo">GitHub</a>
-            <a title="Twitch" class="f7 dib ph2 dark-pink link dim" href="https://www.twitch.tv/domartechtips">Twitch</a>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
 </body>
 
