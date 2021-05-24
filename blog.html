@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>marcin domar.ski</title>
+    <script src="jquery.js"></script>
+
+    <div id="metadata"></div>
+
+    <script>
+        $(function() {
+            $("#metadata").load("metadata");
+            $("#header").load("header");
+            $("#footer").load("footer");
+        });
+    </script>
+</head>
+
+<body style="font-family: 'Open Sans', sans-serif" class="dark-gray">
+    <div class="pa3 center measure-wide lh-copy tj">
+
+        <div id="header"></div>
+
+        <article class="bb b--light-gray pv3">
+            <a class="dark-gray link" href="a/designing_a_brutalist_website.html">
+                <div class="dim">
+                    <h2 class="f4 lh-solid">Designing a brutalist website</h2>
+                    <p class="silver">27 April 2020</p>
+                </div>
+            </a>
+        </article>
+
+    </div>
+
+    <div id="footer"></div>
+
+</body>
+
+</html>
