@@ -3,8 +3,12 @@
 
 <head>
     <title>Designing a brutalist website</title>
-    <script src="../jquery.js"></script>
 
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <script src="../jquery.js"></script>
     <div id="metadata"></div>
 
     <script>
@@ -12,11 +16,19 @@
             $("#metadata").load("../metadata");
             $("#header").load("../header");
             $("#footer").load("../footer");
+
+            setTimeout(function() {
+                $("#block").fadeOut(300);
+            }, 100);
+            setTimeout(function() {
+                $("#block").remove();
+            }, 400);
         });
     </script>
 </head>
 
 <body style="font-family: 'Open Sans', sans-serif" class="dark-gray">
+    <div id="block" class="absolute w-100 h-100 bg-near-white"></div>
     <div class="pa3 center measure-wide lh-copy tj">
 
         <div id="header"></div>

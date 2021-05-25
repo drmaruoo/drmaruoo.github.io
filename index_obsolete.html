@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>marcin domar.ski</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <script src="jquery.js"></script>
+    <div id="metadata"></div>
+
+    <script>
+        $(function() {
+            $("#metadata").load("metadata");
+            $("#header").load("header");
+            $("#footer").load("footer");
+        });
+    </script>
+</head>
+
+<body style="font-family: 'Open Sans', sans-serif; overflow: hidden" class="dark-gray">
+
+    <div class="dt pa0 ma0" style="width: 100%; height: 100vh" id="box">
+        <div class="dtc tc v-mid dark-gray">
+            <header class="">
+                <h1 class="f1 fw5 lh-solid"><a title="Home" class="link dim dark-gray">marcin domar.ski</a></h1>
+                <p class="f3 fw3 lh-solid">web developer / gamer / keyboard geek</p>
+                <p class="f4 fw3 lh-solid"><a title="Home" class="link dim gray" href="./blog.html">personal blog</a></p>
+            </header>
+            <div class="bottom-1 absolute w-100">
+                <div id="footer"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="three.min.js"></script>
+    <script src="vanta.waves.min.js"></script>
+    <script>
+        VANTA.WAVES({
+            el: "#box",
+            mouseControls: false,
+            touchControls: false,
+            gyroControls: false,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xaaaaaa,
+            waveHeight: 18.00,
+            waveSpeed: 0.25,
+            zoom: 0.65
+        })
+    </script>
+</body>
+
+</html>
